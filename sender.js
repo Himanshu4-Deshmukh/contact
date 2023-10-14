@@ -5,10 +5,11 @@ var chat_id = 5211441236;
 var u_name, email, message;
 var ready = function () {
     u_name = document.getElementById("name").value;
+    u_name = document.getElementById("address").value;
     email = document.getElementById("email").value;
     message = document.getElementById("message").value;
     mobile = document.getElementById("mobile").value;
-    message = "Name: " + u_name + "\nEmail: " + email + "\nNumber:" + mobile + "\nMessage: " + message ;
+    message = "Name: " + u_name + "\nEmail: " + email + "\nNumber:" + mobile + "\nAddress:" + address + "\nMessage: " + message ;
 };
 var sender = function () {
     ready();
