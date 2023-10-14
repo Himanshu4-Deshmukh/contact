@@ -33,6 +33,7 @@ var sender = function () {
     document.getElementById("name").value = "";
     document.getElementById("email").value = "";
     document.getElementById("message").value = "";
+    document.getElementById("address").value = "";
     document.getElementById("mobile").value = "";
     return false;
 };
