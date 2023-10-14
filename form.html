@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+    <script src="https://cdn.tailwindcss.com"></script>
+
+   
+
+    <link rel="stylesheet" href="/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <style>
+        .background-radial-gradient {
+            background-color: #f9faff;
+          
+        }
+    </style>
+</head>
+
+<body class="background-radial-gradient ">
+
+
+    <section class="pb-0 relative block py-24 lg:pt-0">
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+            <!-- <div class="flex flex-wrap text-center justify-center">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h2 class="text-4xl font-semibold text-black" >Contact Us</h2>
+
+                </div>
+            </div> -->
+        </div>
+        <br>
+    </section>
+    <center>
+        <div class="container  mx-auto px-4">
+            <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+                <div class="w-full lg:w-8/12 px-4">
+                    <div
+                        class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-slate-200">
+                        <div class="flex-auto p-5 lg:p-10">
+                            <h4 class="text-2xl font-semibold">Place order</h4>
+                            <p class="leading-relaxed mt-1 mb-4 text-slate-500">YOur order will bw completed in 2 days.</p>
+                            <div class="form">
+                                <form action="" onsubmit=" return sender()">
+                                    <input
+                                        class="mt-10 outline-none border-0 px-3 py-3 placeholder-black-100 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                        type="text" name="name" id="name" placeholder="Your name" required>
+                                    <input
+                                        class="mt-5 outline-none border-0 px-3 py-3 placeholder-black-100 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                        type="email" name="email" id="email" placeholder="Your email" required>
+                                    <input
+                                        class="mt-5 outline-none border-0 px-3 py-3 placeholder-black-100 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                        type="tel" name="mobile" id="mobile" maxlength="10" placeholder="Your mobile no" required>
+                                    <textarea
+                                        class="mt-5 outline-none border-0 px-3 py-3 placeholder-black-100 text-slate-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                        name="message" id="message" cols="30" rows="10" placeholder="Enter message"
+                                        required></textarea>
+                                    <br>
+                                    <button type="button" data-te-toggle="modal" data-te-target="#exampleModal"
+                                        data-te-ripple-init data-te-ripple-color="light"> <input
+                                            class="mt-5 cursor-pointer mb-10 bg-slate-800 text-white active:bg-slate-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 "
+                                            type="submit" value="Send" id="btn">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </center>
+
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div data-te-modal-init
+        class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+        id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div data-te-modal-dialog-ref
+            class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]">
+            <div
+                class="min-[576px]:shadow-[0_0.5rem_1rem_rgba(#000, 0.15)] pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
+                <div
+                    class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+                    <!--Modal title-->
+                    <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200"
+                        id="exampleModalLabel">
+                        Congratulations Your Form Has been successfully submitted.
+                    </h5>
+                    <!--Close button-->
+                    <button type="button"
+                        class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+                        data-te-modal-dismiss aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!--Modal body-->
+                <div class="relative flex-auto p-4" data-te-modal-body-ref>
+                    We will reach to you within 24 hr
+                </div>
+
+                <!--Modal footer-->
+                <div
+                    class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+                    <button type="button"
+                        class="inline-block  rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                        data-te-modal-dismiss data-te-ripple-init data-te-ripple-color="light">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+  
+    <script src="/sender.js"></script>
+    
+</body>
+
+</html>
